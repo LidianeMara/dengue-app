@@ -158,7 +158,7 @@ const SearchForm: React.FC<SearchFormProps> = ({ onSearch }) => {
           onChange={(e) => setEndYear(parseInt(e.target.value))}
         />
 
-        <Button type="submit">Buscar</Button>
+        <Button type="submit">Gerar gráfico</Button>
       </Form>
     </FormContainer>
   );
