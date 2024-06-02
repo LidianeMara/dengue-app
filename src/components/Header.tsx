@@ -12,7 +12,7 @@ const HeaderContainer = styled.header`
 const Header: React.FC = () => {
     return (
         <HeaderContainer>
-            <h1>Informações sobre a Dengue</h1>
+            <h1>Info Dengue Brasil</h1>
         </HeaderContainer>
     );
 };

@@ -14,7 +14,15 @@ const DataContainer = styled.div`
   @media (max-width: 768px) {
     padding: 1rem;
   }
-`;
+`
+const IntroText = styled.div`
+  margin-bottom: 2rem;
+  text-align: center;
+  max-width: 600px;
+  line-height: 1.5;
+`
+
+
 
 interface DengueData {
     geocode: string;
@@ -51,6 +59,14 @@ const DengueDataComponent: React.FC = () => {
     };
     return (
         <DataContainer>
+            <IntroText>
+                <p>
+                    Esta aplicação fornece dados atualizados sobre os casos de dengue em diferentes municípios.
+                    Você pode selecionar um município, definir um período específico e visualizar os dados de
+                    casos de dengue ao longo do tempo. Utilize o formulário abaixo para realizar a busca e obter
+                    os dados necessários.
+                </p>
+            </IntroText>
             <SearchForm onSearch={handleSearch} />
             {data?.length > 0 ? (
                 <div style={{ marginBottom: '2rem', width: '100%', display: 'flex' }}>
